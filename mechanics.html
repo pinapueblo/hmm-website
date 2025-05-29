@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mechanics Formulas</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body);"></script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+</head>
+<body>
+
+  <div class="header">
+  <div class="container">
+    <nav>
+      <img src="Studio.png" class="logo" alt="Studio Logo">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="math.html">Mathematics</a></li>
+        <li><a href="mechanics.html">Mechanics</a></li>
+        <li><a href="em.html">E & M</a></li>
+        <li><a href="thermal.html">Thermal</a></li>
+        <li><a href="fluids.html">Fluids</a></li>
+        <li><a href="constants.html"> Constants </a> </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+  <main>
+    <section class="formula-sectiona">
+      <h2>Kinematics</h2>
+      <ul>
+        <li> Velocity: \[\ \vec{v} =\frac{\Delta s}{\Delta t} = \frac{ds}{dt}\]  </li>
+        <li> Acceleration: \[\ \vec{a} =\frac{\Delta v}{\Delta t} = \frac{dv}{dt}\]</li>
+        <li> Velocity: \[v = v_0 + at\]</li>
+        <li> Displacement: \[x = v_0 t + \frac{1}{2} a t^2\]</li>
+        <li> Final Velocity: \[v^2 = v_0^2 + 2a(x-x_0)\]</li>
+        <li> Average Velocity: \[v_{avg} = \frac{v_0 + v}{2}\]</li>
+        <li> Free Fall: \[y = y_0 + v_0 t - \frac{1}{2} g t^2\]</li>
+        <li> Projectile Motion: \[x = v_0 \cos(\theta) t, y = v_0 \sin(\theta) t - \frac{1}{2} g t^2\]</li>
+        <li> Range of Projectile: \[R = \frac{v_0^2 \sin(2\theta)}{g}\]</li>
+      </ul>
+    </section>
+
+    <section class="formula-sectiona">
+      <h2>Dynamics</h2>
+      <ul>
+        <li> Newton's Second Law: \[\sum F = ma = \frac{dp}{dt}\]</li>
+        <li> Weight: \[W = mg\]</li>
+        <li> Dry Friction: \[f \leq \mu_sN\] \[f = \mu_kN\]</li>
+        <li> Centripetal Force: \[F_c = \frac{mv^2}{r}\]</li>
+        <li> Momentum: \[p = mv\]</li>
+        <li> Conservation of Momentum: \[p_{i} = p_{f}\]</li>
+        <li> Impulse: \[J = \Delta p = F \Delta t = \int F \,dt\]</li>
+        <li> Elastic Collision: \[m_1v_{1i} + m_2v_{2i} = m_1v_{1f} + m_2v_{2f}\]</li>
+        <li> Inelastic Collision: \[m_1v_{1i} + m_2v_{2i} = (m_1 + m_2)v_f\]</li>
+        </ul>
+      </section>
+
+      <section class="formula-sectiona">
+        <h2>Rotational Motion</h2>
+        <ul>
+        <li> Rotational Motion: \[\tau = I \alpha\]</li>
+        <li> Moment of Inertia: \[I = \sum m_i r_i^2\]</li>
+        <li> Angular Momentum: \[L = I \omega\]</li>
+        <li> Conservation of Angular Momentum: \[L_i = L_f\]</li>
+        <li> Torque: \[\tau = rF \sin(\theta)\]</li>
+        <li> Angular Velocity: \[\omega = \frac{\Delta \theta}{\Delta t} = \frac{d\theta}{dt}\]</li>
+        <li> Angular Acceleration: \[\alpha = \frac{\Delta \omega}{\Delta t} = \frac{d\omega}{dt}\]</li>
+        <li> Rolling Motion: \[v = r\omega\]</li>
+        <li> Centripetal Acceleration: \[a_c = \frac{v^2}{r} = r\omega^2\]</li>
+        <li> Angular Kinetic Energy: \[KE_{rot} = \frac{1}{2} I \omega^2\]</li>
+        <li> Angular Velocity: \[\omega = \frac{2\pi}{T}\]</li>
+        <li> Angular Displacement: \[\theta = \omega t + \frac{1}{2} \alpha t^2\]</li>
+        <li> Final Angular Velocity: \[\omega_f = \omega_i + \alpha t\]</li>
+        <li> Average Angular Velocity: \[\omega_{avg} = \frac{\omega + \omega_0}{2}\]</li>
+        <li> Angular Momentum: \[L = I \omega\]</li>
+        <li> Angular Frequency: \[\omega = 2\pi f\]</li>
+        <li> Moment of Inertia for Common Shapes:
+          <ul>
+            <li>Solid Cylinder: \[I = \frac{1}{2} m r^2\]</li>
+            <li>Solid Sphere: \[I = \frac{2}{5} m r^2\]</li>
+            <li>Thin Rod (about center): \[I = \frac{1}{12} m L^2\]</li>
+          </ul>
+        </li>
+        </ul>
+      </section>
+
+    <section class="formula-sectiona">
+        <h2>Energy</h2>
+        <ul>
+          <li> Work: \[W = F \Delta d \cos(\theta)\]</li>
+          <li> Kinetic Energy: \[KE = \frac{1}{2} mv^2\]</li>
+          <li> Gravitational Potential Energy: \[PE = mg \Delta h\]</li>
+          <li> Conservation of Energy: \[KE_i + PE_i = KE_f + PE_f\]</li>
+          <li> Power: \[P = \frac{\Delta W}{\Delta t} =\frac{dW}{dt}\]</li>
+          <li> Mechanical Energy: \[E_{mech} = KE + PE\]</li>
+          <li> Work-Energy Theorem: \[W = \Delta KE = KE_f - KE_i\]</li>
+          <li> Work Done by a Variable Force: \[W = \int F \, dx\]</li>
+          <li> Elastic Potential Energy: \[PE_{elastic} = \frac{1}{2} k x^2\]</li>
+        </ul>
+    </section>
+
+    <section class="formula-sectiona">
+    <h2>Gravitational Motion</h2>
+    <ul>
+      <li> Gravitational Force: \[F_g = \frac{G m_1 m_2}{r^2}\]</li>
+      <li> Gravitational Potential Energy: \[PE_g = -\frac{G m_1 m_2}{r}\]</li>
+      <li> Escape Velocity: \[v_e = \sqrt{\frac{2GM}{r}}\]</li>
+      <li> Kepler's Third Law: \[T^2 = \frac{4\pi^2}{GM} r^3\]</li>
+      <li> Orbital Velocity: \[v_o = \sqrt{\frac{GM}{r}}\]</li>
+    </section>
+    
+    <section class="formula-sectiona">
+      <h2>Statics and Solids </h2>
+      <ul>
+        <li> Distributed Load: \[q(x) = -\frac{d^2M}{dx^2}\]</li>
+        <li> Shear Force: \[V(x) = \frac{dM}{dx}\]</li>
+        <li> Distributed Load: \[F = \int_{0}^{L}q(x) \,dx \]</li>
+        <li> Moment of Distributed Load: \[M = \int_{0}^{L} xq(x) \, dx\]</li>
+        <li> Moment Arm: \[\bar{x} = \frac{int_{0}^{L} xq(x) \, dx}{\int_{0}^{L}q(x) \,dx} \]
+        <li> Parallel Axis Theorem: \[I = \sum (I_{cm} + d^2A)\]</li>
+        <li> Location of Centroid:
+          <li> \[x_c = \frac{\sum x_i A_i}{\sum A_i}\]</li>
+          <li> \[y_c = \frac{\sum y_i A_i}{\sum A_i}\]</li>
+        </li>
+        <li> Area Moment of Inertia:
+          <li> \[I_x = \int y^2 \,dA\]</li>
+          <li> \[I_y = \int x^2 \,dA\]</li>
+          <li> Polar Moment of Inertia: \[J = \int r^2 \,dA\]</li>
+        </li>
+        <li> Normal Stress: \[\sigma = \frac{F}{A}\]</li>
+        <li> Shear Stress: \[\tau = \frac{V}{A}\]</li>
+        <li> Normal Strain: \[\epsilon = \frac{\Delta L}{L_0} = \frac{dL}{L_0}\]</li>
+        <li> Shear Strain: \[\gamma = \frac{\Delta x}{L} = \frac{d\theta}{dx}\]</li>
+        <li> Hooke's Law: \[\sigma = E \epsilon\]</li>
+        <li> Shear Modulus: \[\tau = G \gamma\]</li>
+        <li> Poisson's Ratio: \[\nu = -\frac{\epsilon_y}{\epsilon_x}\]</li>
+        <li> Torsional Shear Stress: \[\tau = \frac{Tr}{J}\]</li>
+        <li> Angle of Twist: \[\theta = \frac{TL}{GJ}\] </li>
+        <li> Bending Stress: \[\sigma = \frac{My}{I}\]</li>
+        <li> Bending Deformation (Deflection): \[\frac{d^2y}{dx^2} = \frac{M}{EI}\]</li>
+        <li> Shear Stress in Beams: \[\tau = \frac{VQ}{Ib}\]</li>
+      </ul>
+      </section>
+      
+        <!--search function--->
+<script>
+  function searchFormula() {
+    const query = document.getElementById("searchInput").value;
+    if (query.trim()) {
+      window.location.href = `search.html?q=${encodeURIComponent(query)}`;
+    }
+  }
+</script>
+  </main>
+</body>
+</html>

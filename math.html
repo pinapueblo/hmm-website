@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mathematics Formulas</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body);"></script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+
+</head>
+<body>
+
+  <div id="header">
+  <div class="container">
+    <nav>
+      <img src="Studio.png" class="logo" alt="Studio Logo">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="math.html">Mathematics</a></li>
+        <li><a href="mechanics.html">Mechanics</a></li>
+        <li><a href="em.html">E & M</a></li>
+        <li><a href="thermal.html">Thermal</a></li>
+        <li><a href="fluids.html">Fluids</a></li>
+        <li><a href="constants.html"> Constants </a> </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+  <main>
+    <section class="formula-section">
+      <h2>Algebra</h2>
+      <ul>
+        <li>Quadratic Formula: \[x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}\]</li>
+        <li>Difference of Squares: \[ a^2 - b^2 = (a - b)(a + b) \]</li>
+        <li>Binomial Theorem: \[(a + b)^n = \sum_{k=0}^{n} \binom{n}{k} a^{n-k} b^k\]</li>
+        <li>Logarithm Properties: 
+          <ul>
+            <li>\[\log_b(xy) = \log_b x + \log_b y\]</li>
+            <li>\[\log_b\left(\frac{x}{y}\right) = \log_b x - \log_b y\]</li>
+            <li>\[\log_b(x^n) = n \log_b x\]</li>
+          </ul>
+        </li>
+        <li> Exponent Properties:
+          <ul>
+            <li>\[a^m \cdot a^n = a^{m+n}\]</li>
+            <li>\[\frac{a^m}{a^n} = a^{m-n}\]</li>
+            <li>\[(a^m)^n = a^{mn}\]</li>
+          </ul>
+        </li> 
+      </ul>
+    </section>
+     <section class="formula-section">
+      <h2>Trigonometry</h2>
+      <ul>
+        <li>Basic Trigonometric Ratios:
+          <ul>
+            <li>\[ \sin\theta = \frac{\text{opposite}}{\text{hypotenuse}} \]</li>
+            <li>\[ \cos\theta = \frac{\text{adjacent}}{\text{hypotenuse}} \]</li>
+            <li>\[ \tan\theta = \frac{\sin\theta}{\cos\theta} = \frac{\text{opposite}}{\text{adjacent}} \]</li>
+          </ul>
+        </li>
+        <li>Basic Pythagorean Identities:
+          <ul>
+            <li>\[ \sin^2\theta + \cos^2\theta = 1 \]</li>
+            <li>\[ 1 + \tan^2\theta = \sec^2\theta \]</li>
+            <li>\[ 1 + \cot^2\theta = \csc^2\theta \]</li>
+          </ul>
+        </li>
+        <li> Angle Addition Identities:
+          <ul>
+            <li>Sine Addition: \[ \sin(a \pm b) = \sin a \cos b \pm \cos a \sin b \]</li>
+            <li>Cosine Addition: \[ \cos(a \pm b) = \cos a \cos b \mp \sin a \sin b \]</li>
+          </ul>
+        </li>
+          <li>Double Angle Formulas:
+            <ul>
+              <li>\[ \sin(2\theta) = 2\sin\theta\cos\theta \]</li>
+              <li>\[ \cos(2\theta) = \cos^2\theta - \sin^2\theta = 2\cos^2\theta - 1 = 1 - 2\sin^2\theta \]</li>
+            </ul>
+          </li>
+      </ul>
+    </section>
+    <section class="formula-section">
+      <h2>Calculus</h2>
+      <ul>
+        <li>Differentiation:
+          <ul>
+            <li>Derivative of a Constant: \[ \frac{d}{dx}c = 0 \]</li>
+            <li>Derivative of a Constant Multiple: \[ \frac{d}{dx}(cf(x)) = c\frac{df}{dx} \]</li>
+            <li>Sum Rule: \[ \frac{d}{dx}(f + g) = f' + g' \]</li>
+        <li>Power Rule: \( x^n \): \[ \frac{d}{dx}x^n = nx^{n-1} \]</li>
+        <li>Product Rule: \[ (fg)' = f'g + fg' \]</li>
+        <li>Quotient Rule: \[ \left(\frac{f}{g}\right)' = \frac{f'g - fg'}{g^2} \]</li>
+        <li>Chain Rule: \[ \frac{dy}{dx} = \frac{dy}{du} \cdot \frac{du}{dx} \]</li>
+        </ul>
+        <li> Common Derivatives:
+          <ul>
+            <li>Exponential: \[ \frac{d}{dx}e^x = e^x \]</li>
+            <li>Logarithmic: \[ \frac{d}{dx}\log_b x = \frac{1}{x \ln b} \]</li>
+            <li>Trigonometric: 
+              <ul>
+                <li>\[ \frac{d}{dx}\sin x = \cos x \]</li>
+                <li>\[ \frac{d}{dx}\cos x = -\sin x \]</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>Polar and Parametric Derivatives: 
+          <ul>
+            <li>Polar: \[ \frac{dy}{dx} = \frac{\frac{dr}{d\theta}\sin\theta + r\cos\theta}{\frac{dr}{d\theta}\cos\theta - r\sin\theta} \]</li>
+            <li>Parametric: \[ \frac{dy}{dx} = \frac{\frac{dy}{dt}}{\frac{dx}{dt}} \]</li>
+          </ul>
+        </li>
+        <li> Integration:
+          <ul>
+            <li>Fundamental Theorem of Calculus: \[ \int_a^b f(x) \, dx = F(b) - F(a) \]
+          where \( F'(x) = f(x) \). </li>
+          <li>Power Rule: \[ \int x^n \, dx = \frac{x^{n+1}}{n+1} + C \] (for \( n \neq -1 \))</li>
+          <li>Exponential: \[ \int e^x \, dx = e^x + C \]</li>
+          <li>Logarithmic: \[ \int \frac{1}{x} \, dx = \ln |x| + C \]</li>
+          <li>Parametric: \[ \int_{a}^{b}y \,dx = \int_{\alpha}^{\beta}y(t)x'(t) \,dt \]</li>
+          <li>Polar: \[ \int_{\alpha}^{\beta} r(\theta) \, d\theta = \frac{1}{2} \int_{\alpha}^{\beta} r^2(\theta) \, d\theta \]</li>
+          <li>Trigonometric:
+            <ul>
+              <li>\[ \int \sin x \, dx = -\cos x + C \]</li>
+              <li>\[ \int \cos x \, dx = \sin x + C \]</li>
+            </ul>
+          </li>
+          <li>Integration by Parts: \[ \int u \, dv = uv - \int v \, du \]</li>
+          <li>Substitution: If \( u = g(x) \), then \[ \int f(g(x)) g'(x) \, dx = \int f(u) \, du \]</li>
+          <li>Arc Length: \[ r =r \theta = \int_{a}^{b} \sqrt{1+(f'(x))^2} \,dx \]</li>
+          <li>Parametric Arc Length: \[\int_{a}^{b}\sqrt{(\frac{dx}{dt})^2 + (\frac{dy}{dt})^2} \,dt \]</li>
+          <li>Volumes of Revolution:
+            <ul>
+              <li>Disk Method: \[ V = \pi \int_a^b [f(x)]^2 \, dx \]</li>
+              <li>Washer Method: \[ V = \pi \int_a^b ([R(x)]^2 - [r(x)]^2) \, dx \]</li>
+              <li>Cylindrical Shells: \[ V = 2\pi \int_a^b x f(x) \, dx \]</li>
+            </ul>
+          </li>
+          </ul>
+          </li>
+        <li>Multivariable Calculus:
+          <ul>
+            <li>Partial Derivative: \[ \frac{\partial f}{\partial x} = \lim_{h \to 0} \frac{f(x+h, y) - f(x, y)}{h} \]</li>
+            <li>Chain Rule (multi): \[ \frac{dz}{dt} = \frac{\partial z}{\partial x} \frac{dx}{dt} + \frac{\partial z}{\partial y} \frac{dy}{dt} \]</li>
+            <li>Gradient: \[ \nabla f = \left( \frac{\partial f}{\partial x}, \frac{\partial f}{\partial y} \right) \]</li>
+            <li>Double Integral: \[ \iint_R f(x, y) \, dA = \int_a^b \int_c^d f(x, y) \, dy \, dx \]</li>
+            <li>Line Integral: \[ \int_C f(x, y) \, ds = \int_a^b f(x(t), y(t)) \sqrt{\left(\frac{dx}{dt}\right)^2 + \left(\frac{dy}{dt}\right)^2} \, dt \]</li>
+            <li>Jacobian: \[ J = \begin{vmatrix} \frac{\partial x}{\partial u} & \frac{\partial x}{\partial v} \\ \frac{\partial y}{\partial u} & \frac{\partial y}{\partial v} \end{vmatrix} \]</li>
+          </ul>
+      </ul>
+    </section>
+    <section class="formula-section">
+      <h2>Sequences and Series</h2> <!--- this section is a little whack -->
+      <ul>
+        <li>Arithmetic Sequence: \( a_n = a_1 + (n-1)d \)</li>
+        <li>Geometric Sequence: \( a_n = a_1 r^{n-1} \)</li>
+        <li>Sum of Arithmetic Series: \( S_n = \frac{n}{2} (a_1 + a_n) \)</li>
+        <li>Sum of Geometric Series: \( S_n = a_1 \frac{1 - r^n}{1 - r} \) (for \( r \neq 1 \))</li>
+        <li>Convergence of Series: A series converges if the limit of its partial sums exists.</li>
+        <li>Power Series:
+          <li> General Form: \( f(x) = \sum_{n=0}^{\infty} a_n (x - c)^n \)</li>
+          <li>Radius of Convergence: \( R = \limsup_{n \to \infty} \left| \frac{a_n}{a_{n+1}} \right| \)</li>
+          <li> \(e^x = \sum_{n=0}^{\infty} \frac{x^n}{n!}\)</li>
+          <li> \( \sin x = \sum_{n=0}^{\infty} \frac{(-1)^n x^{2n+1}}{(2n+1)!} \)</li>
+          <li> \( \cos x = \sum_{n=0}^{\infty} \frac{(-1)^n x^{2n}}{(2n)!} \)</li>
+        </li>
+        <li>Taylor Series: \( f(x) = f(c) + f'(c)(x - c) + \frac{f''(c)}{2!}(x - c)^2 + \ldots \)</li>
+      </ul>
+    </section>
+    <section class="formula-section">
+      <h2>Linear Algebra</h2>
+      <ul>
+        <li>Matrix Multiplication: \[ (AB)_{ij} = \sum_k A_{ik} B_{kj} \]</li>
+        <li>Determinant: \[ \text{det}(A) = a_{11}a_{22} - a_{12}a_{21} \] (for 2x2 matrix)</li>
+        <li>Inverse of a Matrix: \[ A^{-1} = \frac{1}{\text{det}(A)} \text{adj}(A) \]</li>
+        <li>Null Space: \[Ax = 0\]</li>
+        <li>Eigenvalues: \[ \text{det}(A - \lambda I) = 0 \]</li>
+        <li>Eigenvectors: \[ A\mathbf{v} = \lambda\mathbf{v} \]</li>
+        <li>Rank of a Matrix: dim(col(A)).</li>
+        <li>Trace of a Matrix: \[ \text{tr}(A) = \sum_i A_{ii} \]</li>
+        <li>Dot Product: \[ \mathbf{u} \cdot \mathbf{v} = \sum_{i=1}^{n} u_i v_i \]</li>
+        <li>Cross Product: \[ \mathbf{u} \times \mathbf{v} = \begin{vmatrix} \mathbf{i} & \mathbf{j} & \mathbf{k} \\ u_1 & u_2 & u_3 \\ v_1 & v_2 & v_3 \end{vmatrix} \]</li>
+      </ul>
+    </section>
+        <section class="formula-section">
+      <h2>Statistics</h2>
+      <ul>
+        <li>Mean: \[ \mu = \frac{1}{N} \sum_{i=1}^{N} x_i \]</li>
+        <li>Variance: \[ \sigma^2 = \frac{1}{N} \sum_{i=1}^{N} (x_i - \mu)^2 \]</li>
+        <li>Standard Deviation: \[ \sigma = \sqrt{\sigma^2} \]</li>
+        <li>Covariance: \[ \text{Cov}(X, Y) = \frac{1}{N} \sum_{i=1}^{N} (x_i - \mu_X)(y_i - \mu_Y) \]</li>
+        <li>Correlation Coefficient: \[ r = \frac{\text{Cov}(X, Y)}{\sigma_X \sigma_Y} \]</li>
+        <li>Probability Density Function: \( f(x) = P(X = x) \)</li>
+        <li>Cumulative Distribution Function: \( F(x) = P(X \leq x) \)</li>
+      </ul>
+    </section>
+    <section class="formula-section">
+      <h2>Complex Numbers</h2>
+      <ul>
+        <li>Complex Number: \[ z = a + bi \]</li>
+        <li>Magnitude: \[ |z| = \sqrt{a^2 + b^2} \]</li>
+        <li>Conjugate: \[ \overline{z} = a - bi \]</li>
+        <li>Polar Form: \[ z = r(\cos \theta + i\sin \theta) \]</li>
+        <li>Euler's Identity: \[ e^{i\theta} = \cos \theta + i\sin \theta \]</li>
+        <li>De Moivre's Theorem: \[ z^n = r^n (\cos(n\theta) + i\sin(n\theta)) \]</li>
+      </ul>
+    </section>
+
+      <!--search function--->
+<script>
+  function searchFormula() {
+    const query = document.getElementById("searchInput").value;
+    if (query.trim()) {
+      window.location.href = `search.html?q=${encodeURIComponent(query)}`;
+    }
+  }
+</script>
+  </main>
+</body>
+</html>

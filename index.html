@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Studio.png" class="logo" alt="Studio Logo">
+                <ul>
+                            <li><a href="math.html"> Mathematics </a> </li>
+                            <li><a href="mechanics.html"> Mechanics </a> </li>
+                            <li><a href="em.html"> E & M </a> </li>
+                            <li><a href="thermal.html"> Thermal Physics </a> </li>
+                            <li><a href="fluids.html"> Fluids </a> </li>
+                            <li><a href="constants.html"> Constants </a> </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+<main>
+  <!-- search bar -->
+  <div class="search-container">
+  <input type="text" id="searchInput" placeholder="Search...">
+  <button onclick="searchFormula()">Search</button>
+</div>
+
+
+      <!---tagline-->
+      <section class="hero">
+        <h1 class="tagline">Access Every Formula.<br><span>One Page at a Time.</span></h1>
+      </section>
+  <section class="formula-carousel">
+  <h2 class="carousel-text" id="formulaText">∫ f(x) dx = F(x) + C</h2>
+</section>
+
+<!--animation --->
+    <script>
+  const formulas = [
+    "∫ f(x) dx = F(x) + C",
+    "v = v₀ + at",
+    "F = ma",
+    "V = IR",
+    "E = mc²",
+    "Q = mcΔT"
+  ];
+
+  let index = 0;
+  const formulaText = document.getElementById("formulaText");
+
+  setInterval(() => {
+    index = (index + 1) % formulas.length;
+    formulaText.style.opacity = 0;
+    setTimeout(() => {
+      formulaText.textContent = formulas[index];
+      formulaText.style.opacity = 1;
+    }, 500);
+  }, 3000);
+</script>
+
+
+<!--search function--->
+<script>
+  function searchFormula() {
+    const query = document.getElementById("searchInput").value;
+    if (query.trim()) {
+      window.location.href = `search.html?q=${encodeURIComponent(query)}`;
+    }
+  }
+</script>
+
+</main>
+  <script src="script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/js/all.min.js"></script>
+</body>
+</html>

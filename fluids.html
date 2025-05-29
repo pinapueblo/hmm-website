@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fluids Formulas</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body);"></script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+</head>
+<body>
+
+  <div class="header">
+  <div class="container">
+    <nav>
+      <img src="Studio.png" class="logo" alt="Studio Logo">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="math.html">Mathematics</a></li>
+        <li><a href="mechanics.html">Mechanics</a></li>
+        <li><a href="em.html">E & M</a></li>
+        <li><a href="thermal.html">Thermal</a></li>
+        <li><a href="fluids.html">Fluids</a></li>
+        <li><a href="constants.html"> Constants </a> </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+  <main>
+    <section class="formula-sectiona">
+      <h2>Fluids</h2>
+      <ul>
+        <li> Continuity Equation: \[\rho_1 A_1 v_1 = \rho_2 A_2 v_2\]</li>
+        <li> Bernoulli's Equation: \[P + \frac{1}{2} \rho v^2 + \rho gh = \text{constant}\]</li>
+        <li> Hydrostatic Pressure: \[P = P_0 + \rho gh\]</li>
+        <li> Pascal's Principle: \[F_1/A_1 = F_2/A_2\]</li>
+        <li> Archimedes' Principle: \[F_b = \rho_f V_d g\]</li>
+        <li> Reynolds Number: \[Re = \frac{\rho v D}{\mu}\]</li>
+        <li> Surface Tension: \[\gamma = F/L\]</li>
+        <li> Capillarity: \[h = \frac{2\gamma \cos(\theta)}{\rho g r}\]</li>
+      </ul>
+    </section>
+    <section class="formula-sectiona">
+        <h2>Fluid Dynamics</h2>
+        <ul>
+          <li> Navier-Stokes Equation: \[\rho \left( \frac{\partial \vec{v}}{\partial t} + (\vec{v} \cdot \nabla) \vec{v} \right) = -\nabla P + \mu \nabla^2 \vec{v}\]</li>
+          <li> Flow Rate: \[Q = A v\]</li>
+          <li> Viscosity: \[\tau = \mu \frac{du}{dy}\]</li>
+          <li> Poiseuille's Law: \[Q = \frac{\pi r^4 (P_1 - P_2)}{8 \mu L}\]</li>
+        </ul>
+    </section>
+    <section class="formula-sectiona">
+      <h2>Applications</h2>
+      <ul>
+        <li> Venturi Effect: \[P_1 + \frac{1}{2} \rho v_1^2 = P_2 + \frac{1}{2} \rho v_2^2\]</li>
+        <li> Torricelli's Law: \[v = \sqrt{2gh}\]</li>
+        <li> Flow in Pipes: \[h_f = \frac{f L}{D} \cdot \frac{\rho v^2}{2g}\]</li>
+      </ul>
+    </section>
+    </div>
+
+      <!--search function--->
+<script>
+  function searchFormula() {
+    const query = document.getElementById("searchInput").value;
+    if (query.trim()) {
+      window.location.href = `search.html?q=${encodeURIComponent(query)}`;
+    }
+  }
+</script>
+  </main>
+
+</body>
+</html>

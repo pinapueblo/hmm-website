@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Thermal Formulas</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body);"></script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+</head>
+<body>
+
+  <div class="header">
+  <div class="container">
+    <nav>
+      <img src="Studio.png" class="logo" alt="Studio Logo">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="math.html">Mathematics</a></li>
+        <li><a href="mechanics.html">Mechanics</a></li>
+        <li><a href="em.html">E & M</a></li>
+        <li><a href="thermal.html">Thermal</a></li>
+        <li><a href="fluids.html">Fluids</a></li>
+        <li><a href="constants.html"> Constants </a> </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+  <main>
+    <section class="formula-sectiona">
+      <h2>Thermodynamics</h2>
+      <ul>
+        <li> First Law of Thermodynamics: \[\Delta U = Q - W\]</li>
+        <li> Ideal Gas Law: \[PV = nRT\]</li>
+        <li> Work Done by Gas: \[W = \int P \, dV\]</li>
+        <li> Heat Transfer: \[Q = mc\Delta T\]</li>
+        <li> Efficiency: \[\eta = \frac{W_{out}}{Q_{in}}\]</li>
+        <li> Carnot Efficiency: \[\eta_{carnot} = 1 - \frac{T_c}{T_h}\]</li>
+        <li> Entropy Change: \[\Delta S = \frac{Q}{T}\]</li>
+        <li> Specific Heat Capacity: \[c = \frac{Q}{m\Delta T}\]</li>
+    </section>
+    <section class="formula-sectiona">
+      <h2>Thermodynamic Processes</h2>
+      <ul>
+        <li> Isothermal Process: \[PV = nRT\]</li>
+        <li> Adiabatic Process: \[PV^\gamma = \text{constant}\]</li>
+        <li> Isochoric Process: \[\Delta U = Q\]</li>
+        <li> Isobaric Process: \[Q = \Delta U + P\Delta V\]</li>
+      </ul>
+    </section>
+    <section class="formula-sectiona">
+      <h2>Heat Transfer</h2>
+      <ul>
+        <li> Conduction: \[Q = kA\frac{\Delta T}{d}\]</li>
+        <li> Convection: \[Q = hA\Delta T\]</li>
+        <li> Radiation: \[Q = \sigma A T^4\]</li>
+        <li> Stefan-Boltzmann Law: \[P = \sigma A (T^4 - T_{env}^4)\]</li>
+        <li> Newton's Law of Cooling: \[\frac{dT}{dt} = -k(T - T_{env})\]</li>
+      </ul>
+    </section>
+    <section class="formula-sectiona">
+      <h2>Phase Changes</h2>
+      <ul>
+        <li> Latent Heat: \[Q = mL\]</li>
+        <li> Heat of Fusion: \[Q_f = mL_f\]</li>
+        <li> Heat of Vaporization: \[Q_v = mL_v\]</li>
+        <li> Clausius-Clapeyron Equation: \[\frac{dP}{dT} = \frac{L}{T(V_g - V_l)}\]</li>
+      </ul>
+    </section>
+
+      <!--search function--->
+<script>
+  function searchFormula() {
+    const query = document.getElementById("searchInput").value;
+    if (query.trim()) {
+      window.location.href = `search.html?q=${encodeURIComponent(query)}`;
+    }
+  }
+</script>
+  </main>
+
+</body>
+</html>

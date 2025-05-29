@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Search Formulas</title>
+  <link rel="stylesheet" href="style.css" />
+  </head>
+<body>
+  <h1>Search Formulas</h1>
+  <input type="text" id="searchInput" placeholder="Type to search formulas..." />
+  <div id="results"></div>
+
+<script>
+  function getQueryParam(name) {
+    const urlParams = new URLSearchParams(window.location.search);
+    return urlParams.get(name) || '';
+  }
+
+  const searchInput = document.getElementById('searchInput');
+  const resultsContainer = document.getElementById('results');
+
+  fetch('formulas.json')
+    .then(response => response.json())
+    .then(data => {
+      const initialQuery = getQueryParam('q').toLowerCase();
+      searchInput.value = initialQuery;
+
+      function performSearch(query) {
+        resultsContainer.innerHTML = '';
+        const filtered = data.filter(item =>
+          item.name.toLowerCase().includes(query)
+        );
+        filtered.forEach(item => {
+          const resultItem = document.createElement('div');
+          resultItem.classList.add('result-item');
+          resultItem.innerHTML = `
+            <h3>${item.name}</h3>
+            <a href="${item.page}">View in ${item.category}</a>
+          `;
+          resultsContainer.appendChild(resultItem);
+        });
+      }
+
+      // if query exists
+      if (initialQuery) {
+        performSearch(initialQuery);
+      }
+
+      // live search
+      searchInput.addEventListener('input', function () {
+        performSearch(this.value.toLowerCase());
+      });
+    });
+</script>
+</body>
+</html>
