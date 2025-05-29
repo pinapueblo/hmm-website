@@ -15,21 +15,6 @@ A free, fast, and easy-to-navigate reference website for essential Mathematics a
 
 ---
 
-## 📂 File Structure/
-├── index.html # Home page \n
-├── math.html # Math formulas \n
-├── mechanics.html # Mechanics formulas \n
-├── em.html # E&M formulas \n
-├── thermal.html # Thermodynamics formulas \n
-├── fluids.html # Fluid formulas \n
-├── constants.html # Constants reference \n
-├── search.html # Search page \n
-├── formulas.json # JSON file for searchable formulas \n
-├── style.css # CSS styles \n
-└── images/ # Logos and assets
-
----
-
 ## 🛠️ Tech Stack
 
 - **Frontend**: HTML, CSS, JavaScript
