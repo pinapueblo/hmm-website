@@ -3,7 +3,7 @@
 A free, fast, and easy-to-navigate reference website for essential Mathematics and Physics formulas, including categories like Mechanics, Electromagnetism, Thermodynamics, and Fluids. Built with HTML, CSS, and JavaScript, and deployed using GitHub Pages.
 
 ## 🌐 Live Demo
-👉 [Check it out here] (https://pinapueblo.github.io/hmm-website/index.html)
+👉 [Check it out here] (https://pinapueblo.github.io/hmm-website/)
 
 ---
 
