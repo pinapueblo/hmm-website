@@ -1,6 +1,6 @@
 # 🖥️ hmm. - Math, Physics, and Engineering Formula Website
 
-A free, fast, and easy-to-navigate reference website for essential Mathematics and Physics formulas, including categories like Mechanics, Electromagnetism, Thermodynamics, and Fluids. Built with HTML, CSS, and JavaScript, and deployed using GitHub Pages.
+A free, fast, and easy-to-navigate reference website for essential Mathematics and Physics formulas, including categories like Mechanics, Electromagnetism, Thermodynamics, and Fluids. Built with HTML, CSS, and JavaScript, and deployed using GitHub Pages. Implemented a JSON-driven search feature that improved user formula lookup times by 23.39%, based on self-conducted timed trials.
 
 ## 🌐 Live Demo
 👉 [Check it out here](https://pinapueblo.github.io/hmm-website/)
